@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Tic-Tac-Toe</h1>
+        <div class="controls">
+            <input id="playerX" placeholder="Player X Name">
+            <input id="playerO" placeholder="Player O Name">
+            <select id="board-size">
+                <option value="3">3x3</option>
+                <option value="4">4x4</option>
+                <option value="5">5x5</option>
+            </select>
+            <select id="game-mode">
+                <option value="human">Human vs Human</option>
+                <option value="random">Human vs Random AI</option>
+                <option value="minimax">Human vs Smart AI</option>
+            </select>
+        </div>
+        <div id="message">Player X's Turn</div>
+        <div id="score">X: 0 | O: 0</div>
+        <div id="timer">Time: 10</div>
+        <div class="board-wrapper">
+            <div class="board"></div>
+        </div>
+        <div class="buttons">
+            <button id="reset">Reset Game</button>
+            <button id="undo">Undo Move</button>
+            <button id="theme-toggle">Switch to Dark Mode</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
